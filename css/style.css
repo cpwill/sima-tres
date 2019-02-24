@@ -243,12 +243,11 @@ General styles
 
 .colophon {
 	padding: 2em;
-	background: #3E454C;
-	color: white;
+	background: #00274c;
 	font-size: 11px;
 }
 
-.colophon a {
+.colophon p {
 	color: white;
 }
 
@@ -387,7 +386,7 @@ html {
 }
 
 .container-officer a {
-	color: #3795eb;
+	color: #1471C8;
 	text-decoration: none;
 }
 
