@@ -1,9 +1,5 @@
-/*
- * Grid layout starts at line 138.
- */
-
 /*--------------------------------------------------------------
-CSS Reset
+reset
 --------------------------------------------------------------*/
 html {
 	font-family: sans-serif;
@@ -86,7 +82,7 @@ h1 {
 
 h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: 400;
 	color: #000;
 }
@@ -110,7 +106,7 @@ p {
 
 .block-one h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: 400;
 	color: #000;
 	padding-bottom: .2em;
@@ -134,7 +130,7 @@ p {
 
 .block-two h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: 400;
 	color: #000;
 	padding-bottom: .2em;
@@ -158,7 +154,7 @@ p {
 
 .block-three h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: 400;
 	color: #000;
 	padding-bottom: .2em;
@@ -198,12 +194,13 @@ General styles
 }
 
 .block-two {
-	background: #279ce5;
+	/* background: #279ce5; */
+	background: #7ECEFD;
 	padding-bottom: 2em;
 }
 
 .block-three {
-	background: #7ECEFD;
+	background: #fff;
 	padding-bottom: 2em;
 }
 
@@ -225,10 +222,9 @@ General styles
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: background 250ms ease-in-out,
-                transform 150ms ease;
+  /* transition: background 250ms ease-in-out,transform 150ms ease;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    -moz-appearance: none; */
 }
 
 .button:hover,
@@ -277,6 +273,20 @@ parallax
   background-size: cover;
 	/*height: 800px;*/
 
+}
+
+.parallax-abt {
+	/*background-image: url('http://i63.tinypic.com/14mb8l3.jpg');*/
+	background-image: url('http://i67.tinypic.com/11to36c.jpg');
+	/* Set a specific height */
+	min-height: 15vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*height: 800px;*/
 }
 
 /*--------------------------------------------------------------
@@ -333,4 +343,69 @@ CSS Grid layout for wider screens, when browser supports grid:
 		}
 
 	}
+}
+
+/*--------------------------------------------------------------
+officers
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.column {
+	float: left;
+	margin: auto:
+	width: 10%;
+	padding: 8px 8px;
+}
+
+.officer-img {
+	width: 320px;
+	height: 310px;
+}
+
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.container-officer {
+	padding: 0 16px;
+}
+
+.container-officer a {
+	color: #3795eb;
+	text-decoration: none;
+}
+
+
+.container-officer::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	color: #0a2749;
+
 }
