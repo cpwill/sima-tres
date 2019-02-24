@@ -346,7 +346,7 @@ parallax
 	/*background-image: url('http://i63.tinypic.com/14mb8l3.jpg');*/
 	background-image: url('http://i67.tinypic.com/11to36c.jpg'); 
 	/* Set a specific height */
-	min-height: 20vh;
+	min-height: 80vh;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
